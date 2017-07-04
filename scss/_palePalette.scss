@@ -47,6 +47,90 @@ $clrLgtr: #ECEFF1;		//rgba(236, 239, 241, 1)
 	background: -o-linear-gradient(top left, #78909b, #465962);
 	background: linear-gradient(top left, #78909b, #465962);
 }
+
+
+@mixin bgGreenGrd-mx {
+background: #2cfedd; /* Old Browsers */
+background: -webkit-linear-gradient(bottom left,#2cfedd,#c7f4eb); /*Safari 5.1-6*/
+background: -o-linear-gradient(bottom left,#2cfedd,#c7f4eb); /*Opera 11.1-12*/
+background: -moz-linear-gradient(bottom left,#2cfedd,#c7f4eb); /*Fx 3.6-15*/
+background: linear-gradient(bottom left, #2cfedd, #c7f4eb); /*Standard*/
+
+}
+
+@mixin bgDrkVlvt-mx {
+  /***  CSS Gradient  ***/
+  /*  Chrome 1-9 and Safari 4-5.0  */
+  background-image: -webkit-gradient(linear, left top, left bottom,
+        color-stop( 0.0, rgb(174, 185, 233) ),
+        color-stop( 0.500, rgb(155, 132, 255) ),
+        color-stop( 1.0, rgb(99, 104, 231) ));
+
+  /*  Chrome 10+ Safari 5.1+ Mobile Safari  */
+  background-image: -webkit-linear-gradient(top,
+        rgb(174, 185, 233), 
+        rgb(155, 132, 255) 50.0%,
+        rgb(99, 104, 231) );
+
+  /*  Firefox 3.6+  */
+  background-image: -moz-linear-gradient(top,
+        rgb(174, 185, 233), 
+        rgb(155, 132, 255) 50.0%,
+        rgb(99, 104, 231) );
+
+  /*  IE 10+  */
+  background-image: -ms-linear-gradient(top,
+        rgb(174, 185, 233), 
+        rgb(155, 132, 255) 50.0%,
+        rgb(99, 104, 231) );
+
+  /*  Opera 11.10+  */
+  background-image: -o-linear-gradient(top,
+        rgb(174, 185, 233), 
+        rgb(155, 132, 255) 50.0%,
+        rgb(99, 104, 231) );
+
+  /*  W3C  */
+  background-image: linear-gradient(top,
+        rgb(174, 185, 233), 
+        rgb(155, 132, 255) 50.0%,
+        rgb(99, 104, 231) );
+
+}
+
+@mixin bgWhiteGlow-mx {
+  /***  CSS Gradient  ***/
+  /*  Chrome 1-9 and Safari 4-5.0  */
+  background-image: -webkit-gradient(linear, left top, left bottom,
+        color-stop( 0.0, rgb(236, 239, 241) ),
+        color-stop( 1.0, rgb(255, 255, 255) ));
+
+  /*  Chrome 10+ Safari 5.1+ Mobile Safari  */
+  background-image: -webkit-linear-gradient(top,
+        rgb(236, 239, 241), 
+        rgb(255, 255, 255) );
+
+  /*  Firefox 3.6+  */
+  background-image: -moz-linear-gradient(top,
+        rgb(236, 239, 241), 
+        rgb(255, 255, 255) );
+
+  /*  IE 10+  */
+  background-image: -ms-linear-gradient(top,
+        rgb(236, 239, 241), 
+        rgb(255, 255, 255) );
+
+  /*  Opera 11.10+  */
+  background-image: -o-linear-gradient(top,
+        rgb(236, 239, 241), 
+        rgb(255, 255, 255) );
+
+  /*  W3C  */
+  background-image: linear-gradient(top,
+        rgb(236, 239, 241), 
+        rgb(255, 255, 255) );
+}
+
 @mixin txtSdw-mx {text-shadow: 0px 2px 10px rgba(120, 144, 155, .7);}
 @mixin txtSdwDrk-mx- {text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.11);}
 

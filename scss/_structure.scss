@@ -66,3 +66,6 @@
 	@media (max-width: 800px){padding: 1.75em;}
 	@media (max-width: 400px){padding: 2.5em;}
 }
+@mixin h-800-mx {
+	height: 50.000em;
+}
