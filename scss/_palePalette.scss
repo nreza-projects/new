@@ -1,0 +1,52 @@
+/* PALE PALETTE */
+
+$clrWhite: #FFFFFF;		//rgba(255, 255, 255, 1)
+$clrBlack: #000000;		//rgba(0, 0, 0, 1)
+
+$clrRetroRed: #FC5457;	//rgba(252, 84, 87, 1)
+$clrGlowGreen: #2CFEDD;	//rgba(44, 254, 221, 1)
+$clrLimeGreen: #95FEDE;	//rgba(149, 254, 222, 1)
+$clrSkyBlue: #1CA9FB;		//rgba(28, 169, 251, 1)
+$clrDeepBlue:#04205A;		//rgba(4, 32, 90, 1)
+
+$clrDrkr: #011131;		//rgba(1, 17, 49, 1)
+$clrDrk: #233140;			//rgba(35, 49, 64, 1)		
+$clrDeepPale: #465961;	//rgba(70, 89, 97, 1)
+$clrPale: #79909A;		//rgba(121, 144, 154, 1)
+$clrLgt: #CFD8DC;			//rgba(207, 216, 220, 1)
+$clrLgtr: #ECEFF1;		//rgba(236, 239, 241, 1)
+
+@mixin bgWhite-mx {background: $clrWhite;}
+@mixin bgBlack-mx {background: $clrBlack;}
+
+@mixin bgRetroRed-mx {background: $clrRetroRed;}
+@mixin bgGlowGreen-mx {background: $clrGlowGreen;}
+@mixin bgLimeGreen-mx {background: $clrLimeGreen;}
+@mixin bgSkyBlue-mx {background: $clrSkyBlue;}
+@mixin bgDeepBlue-mx {background: $clrDeepBlue;}
+
+@mixin bgDrkr-mx {background: $clrDrkr;}
+@mixin bgDrk-mx {background: $clrDrk;}
+@mixin bgDeepPale-mx {background: $clrDeepPale;}
+@mixin bgPale-mx {background: $clrPale;}
+@mixin bgLgt-mx {background: $clrLgt;}
+@mixin bgLgtr-mx {background: $clrLgtr;}
+
+@mixin bgLgtGrd-mx {
+	background: #eceff1;
+	background: -webkit-linear-gradient(top right,#eceff1,#cfd8dc);
+	background: -o-linear-gradient(top right,#eceff1,#cfd8dc);
+	background: -moz-linear-gradient(top right,#eceff1,#cfd8dc);
+	background: linear-gradient(top right, #eceff1, #cfd8dc);
+}
+@mixin bgDrkGrd-mx {
+	background: #78909b;
+	background: -webkit-linear-gradient(top left,#78909b,#465962);
+	background: -webkit-gradient(linear, left top, right bottom, from(#78909b), to(#465962));
+	background: -webkit-linear-gradient(top left, #78909b, #465962);
+	background: -o-linear-gradient(top left, #78909b, #465962);
+	background: linear-gradient(top left, #78909b, #465962);
+}
+@mixin txtSdw-mx {text-shadow: 0px 2px 10px rgba(120, 144, 155, .7);}
+@mixin txtSdwDrk-mx- {text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.11);}
+

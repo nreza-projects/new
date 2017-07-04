@@ -1,0 +1,27 @@
+// ALL IMPORTS
+	@import 'base';
+	@import 'fonts';
+	@import 'palePalette';
+	@import 'loader';
+
+//structure
+	@import 'structure';
+
+//nav
+	@import 'nav';
+	@include nav-motion-mx;
+	
+//GLOBAL
+
+body {
+    @include fntRobotoSlab300-mx;
+    color: $clrDeepPale;
+}
+h1,h2,h3,h4,h5,h6{color: $clrDrkr;}
+h1,h5{@include fntRobotoCondensed400-mx;}
+h2,h4{@include fntRoboto900-mx;}
+h3{@include fntRoboto900-mx;}
+
+.feat {
+	@include padLgt-mx;
+}

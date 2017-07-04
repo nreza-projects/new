@@ -1,0 +1,13 @@
+/*
+<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Slab:300|Roboto:300,500,900" rel="stylesheet">
+*/
+
+//font-family: 'Roboto', sans-serif;
+//font-family: 'Roboto Slab', serif;
+//font-family: 'Roboto Condensed', sans-serif;
+
+@mixin fntRoboto900-mx {font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif; font-weight: 900;}
+@mixin fntRoboto500-mx {font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif; font-weight: 500;}
+@mixin fntRoboto300-mx {font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif; font-weight: 300;}
+@mixin fntRobotoSlab300-mx {font-family: 'Roboto Slab', 'Times','Palatino', serif; font-weight: 300;}
+@mixin fntRobotoCondensed400-mx {font-family: 'Roboto Condensed', 'Impact', sans-serif; font-weight: 400;}

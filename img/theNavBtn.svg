@@ -1,0 +1,8 @@
+<svg id="theNavBtn" xmlns="http://www.w3.org/2000/svg" width="50" height="25" viewBox="0 0 50 25">
+  <style>
+    .bar{fill:#233141;}
+  </style>
+  <path id="top" class="bar" d="M0 0h50v3H0V0z"/>
+  <path id="middle" class="bar" d="M25 11h25v3H25v-3z"/>
+  <path id="bottom" class="bar" d="M37.5 22H50v3H37.5v-3z"/>
+</svg>
