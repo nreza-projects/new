@@ -2,7 +2,7 @@
 	@import 'base';
 	@import 'fonts';
 	@import 'palePalette';
-	@import 'loader';
+	@import 'load';
 
 //structure
 	@import 'structure';
@@ -22,6 +22,34 @@ h1,h5{@include fntRobotoCondensed400-mx;}
 h2,h4{@include fntRoboto900-mx;}
 h3{@include fntRoboto900-mx;}
 
+.container {@include container-mx;}
+.top-bar {@include topBar-mx;}
+
+.hero-txt {
+	@include heroTxt-mx;
+	h1.head{
+		font-size: 4em;
+		line-height: 1;
+		text-transform: uppercase;
+		word-spacing: -0.02em;
+		letter-spacing: -0.03em;
+		@media (max-width: 800px) {font-size: 2.7em;}
+	}
+}
+.dwn-arrw {
+	position: relative;
+	width: 3em;
+	height: 3em;
+	img{width: 100%;}
+	margin: 2em auto 0 auto;
+}
+
+
+.write-up {
+	@include fixed-mx;
+}
+
 .feat {
-	@include padLgt-mx;
+	@include pad-mx;
+	@include fluid-mx;
 }

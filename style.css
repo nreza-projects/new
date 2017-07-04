@@ -125,7 +125,7 @@ ul li { list-style: none; }
 
 .symbol { position: relative; margin: auto; top: 30vh; width: 30vh; height: 30vh; background-image: url(img/spin.svg); background-position: center; background-size: contain; }
 
-.spin { -webkit-animation: spin .8s linear infinite; animation: spin .8s linear infinite; }
+.spin { -webkit-animation: spin .5s linear infinite; animation: spin .5s linear infinite; }
 
 @-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
   50% { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
@@ -135,36 +135,9 @@ ul li { list-style: none; }
   50% { -webkit-transform: rotate(180deg); transform: rotate(180deg); }
   100% { -webkit-transform: rotate(360deg); transform: rotate(360deg); } }
 
-.container { position: relative; top: 0; margin: 0; width: 100%; max-width: 100vw; overflow: hidden; }
-
-.top-bar { position: absolute; top: 2.75em; left: 5%; right: 5%; min-height: 20vh; z-index: 50; }
-
-@media (max-width: 400px) { .top-bar { left: 2.5%; right: 2.5%; } }
-
-.top-bar:before, .top-bar:after { content: " "; display: table; }
-
-.top-bar:after { clear: both; }
-
-/** For IE 6/7 only Include this rule to trigger hasLayout and contain floats. */
-.top-bar { *zoom: 1; }
-
-.space-fxd { position: relative; margin: 0 auto; width: 100%; max-width: 80vw; min-height: 50vh; }
-
-@media (max-width: 800px) { .space-fxd { max-width: 80vw; } }
-
-@media (max-width: 400px) { .space-fxd { max-width: 90vw; } }
-
-.space-fld { position: relative; margin: 0 auto; width: 100%; max-width: 100vw; min-height: 50vh; }
-
 #theLogo { float: left; width: 2.7em; height: 2.7em; cursor: pointer; z-index: 104; }
 
 #theLogo img { height: 100%; cursor: pointer; }
-
-.hero-txt { position: relative; width: 70%; height: 40em; padding: 16vh 0.5em 0 0.5em; margin: auto; }
-
-@media (max-width: 800px) { .hero-txt { width: 75%; } }
-
-@media (max-width: 400px) { .hero-txt { width: 85%; } }
 
 #theNavSpace { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: 100; background: rgba(35, 49, 64, 0.99); }
 
@@ -236,7 +209,37 @@ h2, h4 { font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif; font-weig
 
 h3 { font-family: 'Roboto', 'Helvetica Neue', 'Arial', sans-serif; font-weight: 900; }
 
-.feat { padding: 1.5em; }
+.container { position: relative; top: 0; margin: 0; width: 100%; max-width: 100vw; overflow: hidden; }
+
+.top-bar { position: absolute; top: 2.75em; left: 5%; right: 5%; min-height: 20vh; z-index: 50; }
+
+.top-bar:before { content: " "; display: table; }
+
+.top-bar:after { content: " "; display: table; clear: both; *zoom: 1; }
+
+@media (max-width: 400px) { .top-bar { left: 2.5%; right: 2.5%; } }
+
+.hero-txt { position: relative; width: 70%; height: 40em; padding: 30vh 0.5em 0 0.5em; margin: auto; }
+
+@media (max-width: 800px) { .hero-txt { width: 75%; } }
+
+@media (max-width: 400px) { .hero-txt { width: 85%; } }
+
+.hero-txt h1.head { font-size: 4em; line-height: 1; text-transform: uppercase; word-spacing: -0.02em; letter-spacing: -0.03em; }
+
+@media (max-width: 800px) { .hero-txt h1.head { font-size: 2.7em; } }
+
+.dwn-arrw { position: relative; width: 3em; height: 3em; margin: 2em auto 0 auto; }
+
+.dwn-arrw img { width: 100%; }
+
+.write-up { position: relative; margin: 0 auto; width: 100%; max-width: 80vw; min-height: 50vh; }
+
+@media (max-width: 800px) { .write-up { max-width: 80vw; } }
+
+@media (max-width: 400px) { .write-up { max-width: 90vw; } }
+
+.feat { padding: 1.5em; position: relative; margin: 0 auto; width: 100%; max-width: 100vw; min-height: 50vh; }
 
 @media (max-width: 800px) { .feat { padding: 1.75em; } }
 
